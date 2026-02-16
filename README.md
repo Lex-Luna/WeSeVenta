@@ -12,4 +12,10 @@ Sistema de ventas desarrollado con **.NET Core 8 (MVC)** para la capa backend. E
   - `Microsoft.EntityFrameworkCore.Tools`
 
 ## Base de Datos
-El proyecto se enlaza a una base de datos SQL Server. Los scripts de creación y relación de tablas se encuentran en la carpeta:
+El proyecto se enlaza a una base de datos SQL Server. Los scripts de creación y relación de tablas se encuentran en la carpeta: SceiptsBDD
+
+## Generación de Modelos (Database First)
+Para conectar Entity Framework con la base de datos existente y generar las clases de entidad en la carpeta `Models`, se ejecutó el siguiente comando en la **Consola de Administrador de Paquetes** (PMC) de Visual Studio:
+
+```powershell
+Scaffold-DbContext "Server=localhost;Database=VentaReal;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
