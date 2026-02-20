@@ -44,3 +44,6 @@ public IActionResult Get()
 
 **importante:** 
 Para que se pueda acceder a este método, es necesario configurar las rutas en el archivo `Program.cs` o `Startup.cs`, dependiendo de la versión de ASP
+
+## Crecion de Crud
+para la creacion del CRUD es necaasario crao una carpeta Request dentro del modelo "Request = Solisitud" Dentro ded ella crearemos las clases ClienteRequest y ProductoRequest para la realizacion del crude de estas clases
