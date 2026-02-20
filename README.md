@@ -4,9 +4,6 @@
 Sistema de ventas desarrollado con **.NET Core 8 (MVC)** para la capa backend. El proyecto gestiona productos, clientes, ventas y las relaciones entre estas entidades, y está diseñado para conectarse a **SQL Server** mediante **Entity Framework Core**.
 
 ## Tecnologías y Paquetes Utilizados
-- **Framework:** .NET Core 8 (MVC)
-- **Base de datos:** Microsoft SQL Server
-- **Paquetes NuGet añadidos:**
   - `Microsoft.Data.SqlClient`
   - `Microsoft.EntityFrameworkCore`
   - `Microsoft.EntityFrameworkCore.Tools`
@@ -19,6 +16,7 @@ Para conectar Entity Framework con la base de datos existente y generar las clas
 
 ```powershell
 Scaffold-DbContext "Server=localhost;Database=VentaReal;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+```
 
 ## Controladores API
 Los controladores se encuentran en la carpeta `Controllers`. Para comenzar a desarrollar la lógica de la aplicación, se creó un controlador de tipo **API** siguiendo estos pasos:
